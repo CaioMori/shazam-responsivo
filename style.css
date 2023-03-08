@@ -77,3 +77,38 @@ footer {
   box-sizing: border-box;
   box-shadow: 0 0 20px #000;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.column {
+  padding: 10px;
+}
+
+div img {
+  width: 100%;
+  border: 5px solid #fff;
+}
+
+@media (max-width: 480px) {
+  header,
+  nav,
+  nav a,
+  section,
+  aside {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  main {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .grid {
+    grid-template-columns: 100%;
+  }
+}
